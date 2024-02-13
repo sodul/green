@@ -3,27 +3,6 @@ Steps to Release
 
 1. Bump the version in `green/VERSION`
 
-2. Run `make release`
+2. Merge to the main branch
 
-
-Very First Time
-===============
-
-1. Set up `~/.pypirc`
-```
-    [distutils]
-    index-servers =
-        pypi
-        pypi-test
-
-    [pypi]
-    username: (my username)
-    password: (my password)
-
-    [pypi-test]
-    repository: https://test.pypi.org/legacy/
-    username: (my username)
-    password: (my password)
-```
-
-2. `python setup.py register -r pypi`
+3. Create a new release in GitHub, the GH action will take care of the rest.
